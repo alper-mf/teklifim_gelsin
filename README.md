@@ -11,7 +11,7 @@ https://user-images.githubusercontent.com/8598467/149181853-4ba3c621-87a1-493c-b
 
 
 # Uygulama Hakkında
-Uygulama Flutter ile oluşturulmuştur.
+Teklifim Gelsin sitesi için hazirlanmis tasktir. Uygulama uzerinden en uygun kredi veren bankalarin sorgulamasini yapabilirsiniz.
 
 # Kullanılan Paketler:
 
