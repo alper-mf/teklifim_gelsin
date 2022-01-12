@@ -1,3 +1,6 @@
 # Teklifim Gelsin
 
-<video src='https://github.com/alper-mf/teklifim_gelsin/blob/main/app_preview/video_preview.mov' width=180/>
+
+<video width="320" height="240" controls>
+  <source src="https://github.com/alper-mf/teklifim_gelsin/blob/main/app_preview/app_preview.mp4" type="video/mov">
+</video>
