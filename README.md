@@ -18,7 +18,7 @@ Uygulama Flutter ile oluşturulmuştur.
 
 | Paketler        |            |
 | ------------- |:-------------:
-| flutter_dotenv | API, TOKEN gibi gizli tutulması gereken env için kullanılmıştır. |
+| flutter_dotenv | API, TOKEN gibi gizli tutulması gerekenler şeyler için kullanılmıştır. |
 | flutter_svg  | SVG dosyaları için kullanılmıştır. | 
 | lottie      | Lottie ile oluşturulan JSON animasyonlar için kullanılmıştır.|
 | dio | Http Client |
