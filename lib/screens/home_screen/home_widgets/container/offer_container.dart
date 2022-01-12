@@ -11,7 +11,9 @@ import 'package:teklifim_gelsin/screens/home_screen/home_widgets/forms_widgets/c
 import 'package:teklifim_gelsin/screens/home_screen/home_widgets/forms_widgets/form_group.dart';
 
 class OfferContainer extends NetWorkService {
-  OfferContainer({Key? key,}) : super(key: key);
+  OfferContainer({
+    Key? key,
+  }) : super(key: key);
 
   final DetailedLoanModel _detailedLoanModel = Get.put(DetailedLoanModel());
 
@@ -33,9 +35,11 @@ class OfferContainer extends NetWorkService {
               child: FormGroup(),
             ),
             SizedBox(height: Sizes.kPaddingH / 2),
-            Text(
-              '₺${controller.loanTextController.text}, ${controller.mounthTextController.text} Vadeli',
-              style: ITextStyle.subHead(Palette.sliderActiveColor, true),
+            Obx(
+              () => Text(
+                '₺${controller.loanDouble().round()} ${controller.mounthDouble().round()} Ay Vadeli',
+                style: ITextStyle.subHead(Palette.sliderActiveColor, true),
+              ),
             ),
             SizedBox(height: Sizes.kPaddingH / 2),
             Flexible(
