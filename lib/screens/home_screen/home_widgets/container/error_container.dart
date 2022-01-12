@@ -45,9 +45,12 @@ class ErrorContainer extends NetWorkService {
                 color: Palette.sliderActiveColor,
                 title: 'Devam Et',
                 onTap: () {
-                  fetchOffers(controller.loanTextController.text, 24,
-                          ResponseCount.maxMounth)
-                      .then((value) {
+                  fetchOffers(
+                    controller.loanTextController.text,
+                    ResponseCount.maxMounth,
+                    ResponseCount.partlyResponse,
+                  ).then((value) {
+                    controller.setMounth(ResponseCount.maxMounth.toDouble());
                     controller.bottomSlidingBarCont.close();
                     controller.setShowContainer(true);
                     controller.setShowOffers(true);
