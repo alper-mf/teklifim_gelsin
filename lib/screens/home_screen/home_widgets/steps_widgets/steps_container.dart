@@ -19,13 +19,7 @@ class StepsContainer extends GetView<HomeModel> {
       child: Padding(
         padding: const EdgeInsets.all(14.0),
         child: InkWell(
-          onTap: () {
-            if (controller.bottomSlidingBarCont.isPanelClosed) {
-              controller.bottomSlidingBarCont.open();
-            } else {
-              controller.bottomSlidingBarCont.close();
-            }
-          },
+          onTap: () => tapMain(controller),
           child: Column(
             children: [
               Flexible(
@@ -85,5 +79,13 @@ class StepsContainer extends GetView<HomeModel> {
         ),
       ),
     );
+  }
+}
+
+tapMain(HomeModel controller) {
+  if (controller.bottomSlidingBarCont.isPanelClosed) {
+    controller.bottomSlidingBarCont.open();
+  } else {
+    controller.bottomSlidingBarCont.close();
   }
 }
