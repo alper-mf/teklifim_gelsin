@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:teklifim_gelsin/common/constants/sizes_constant.dart';
-import 'package:teklifim_gelsin/common/constants/text_styles.dart';
+import '../../../../common/constants/sizes_constant.dart';
+import '../../../../common/constants/text_styles.dart';
 
 class CustomMainButton extends StatelessWidget {
   final Color color;

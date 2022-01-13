@@ -5,10 +5,10 @@ import 'package:dio/dio.dart';
 import 'package:flutter/cupertino.dart';
 
 import 'package:get/get_state_manager/get_state_manager.dart';
-import 'package:teklifim_gelsin/common/constants/assets_constant.dart';
-import 'package:teklifim_gelsin/common/enum/network_enum.dart';
-import 'package:teklifim_gelsin/data/model/offers_model.dart';
-import 'package:teklifim_gelsin/screens/detailed_loan_screen/detailed_loan_model/detailed_loan_model.dart';
+import '../constants/assets_constant.dart';
+import '../enum/network_enum.dart';
+import '../../data/model/offers_model.dart';
+import '../../screens/detailed_loan_screen/detailed_loan_model/detailed_loan_model.dart';
 
 // ignore: must_be_immutable
 abstract class NetWorkService extends GetView<DetailedLoanModel> {

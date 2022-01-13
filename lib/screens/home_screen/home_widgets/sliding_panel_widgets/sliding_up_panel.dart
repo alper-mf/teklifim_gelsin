@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sliding_up_panel/sliding_up_panel.dart';
-import 'package:teklifim_gelsin/common/constants/sizes_constant.dart';
-import 'package:teklifim_gelsin/screens/home_screen/home_model/home_model.dart';
+import '../../../../common/constants/sizes_constant.dart';
+import '../../home_model/home_model.dart';
 
 import 'sliding_up_inside.dart';
 

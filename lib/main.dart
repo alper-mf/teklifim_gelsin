@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
-import 'package:teklifim_gelsin/screens/home_screen/home_screen.dart';
+import 'screens/home_screen/home_screen.dart';
 
 import 'common/service/init_service.dart';
 

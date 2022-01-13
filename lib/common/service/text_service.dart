@@ -1,6 +1,6 @@
 import 'dart:math';
 
-import 'package:teklifim_gelsin/common/constants/assets_constant.dart';
+import '../constants/assets_constant.dart';
 
 class TextServiceMixin {
   //#

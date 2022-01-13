@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:lottie/lottie.dart';
-import 'package:teklifim_gelsin/common/constants/assets_constant.dart';
-import 'package:teklifim_gelsin/common/constants/sizes_constant.dart';
-import 'package:teklifim_gelsin/common/constants/text_styles.dart';
-import 'package:teklifim_gelsin/presentation/utility/palette.dart';
-import 'package:teklifim_gelsin/screens/home_screen/home_model/home_model.dart';
-import 'package:teklifim_gelsin/screens/home_screen/home_widgets/steps_widgets/step_card.dart';
+import '../../../../common/constants/assets_constant.dart';
+import '../../../../common/constants/sizes_constant.dart';
+import '../../../../common/constants/text_styles.dart';
+import '../../../../presentation/utility/palette.dart';
+import '../../home_model/home_model.dart';
+import 'step_card.dart';
 
 class StepsContainer extends GetView<HomeModel> {
   const StepsContainer({

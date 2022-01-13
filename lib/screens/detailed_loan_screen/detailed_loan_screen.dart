@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:teklifim_gelsin/presentation/utility/palette.dart';
-import 'package:teklifim_gelsin/screens/detailed_loan_screen/detailed_loan_model/detailed_loan_model.dart';
-import 'package:teklifim_gelsin/screens/home_screen/home_model/home_model.dart';
+import '../../presentation/utility/palette.dart';
+import 'detailed_loan_model/detailed_loan_model.dart';
+import '../home_screen/home_model/home_model.dart';
 
 import 'detailed_loan_widgets/detailed_appbar.dart';
 import 'detailed_loan_widgets/detailed_list_builder.dart';

@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:teklifim_gelsin/common/constants/sizes_constant.dart';
-import 'package:teklifim_gelsin/common/constants/text_styles.dart';
-import 'package:teklifim_gelsin/common/service/text_service.dart';
-import 'package:teklifim_gelsin/presentation/utility/palette.dart';
-import 'package:teklifim_gelsin/screens/detailed_loan_screen/detailed_loan_widgets/detailed_button.dart';
+import '../../../common/constants/sizes_constant.dart';
+import '../../../common/constants/text_styles.dart';
+import '../../../common/service/text_service.dart';
+import '../../../presentation/utility/palette.dart';
+import 'detailed_button.dart';
 
 class DetailedLoanCard extends StatelessWidget with TextServiceMixin {
   String aylikTaksitTutari;

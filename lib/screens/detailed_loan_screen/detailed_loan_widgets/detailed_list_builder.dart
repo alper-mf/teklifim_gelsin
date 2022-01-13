@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:teklifim_gelsin/common/constants/sizes_constant.dart';
-import 'package:teklifim_gelsin/common/enum/fetch_enum.dart';
-import 'package:teklifim_gelsin/common/service/network_service.dart';
-import 'package:teklifim_gelsin/common/service/text_service.dart';
-import 'package:teklifim_gelsin/data/model/offers_model.dart';
-import 'package:teklifim_gelsin/presentation/utility/palette.dart';
-import 'package:teklifim_gelsin/screens/detailed_loan_screen/detailed_loan_model/detailed_loan_model.dart';
-import 'package:teklifim_gelsin/screens/detailed_loan_screen/detailed_loan_widgets/detailed_button.dart';
-import 'package:teklifim_gelsin/screens/detailed_loan_screen/detailed_loan_widgets/detailed_card.dart';
-import 'package:teklifim_gelsin/screens/home_screen/home_model/home_model.dart';
+import '../../../common/constants/sizes_constant.dart';
+import '../../../common/enum/fetch_enum.dart';
+import '../../../common/service/network_service.dart';
+import '../../../common/service/text_service.dart';
+import '../../../data/model/offers_model.dart';
+import '../../../presentation/utility/palette.dart';
+import '../detailed_loan_model/detailed_loan_model.dart';
+import 'detailed_button.dart';
+import 'detailed_card.dart';
+import '../../home_screen/home_model/home_model.dart';
 
 // ignore: must_be_immutable
 class DetailedListBuilder extends NetWorkService with TextServiceMixin {

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sliding_up_panel/sliding_up_panel.dart';
-import 'package:teklifim_gelsin/data/model/steps_model.dart';
+import '../../../data/model/steps_model.dart';
 
 class HomeModel extends GetxController {
   //Slide Up Panel Controller

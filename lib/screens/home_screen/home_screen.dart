@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:teklifim_gelsin/common/constants/sizes_constant.dart';
-import 'package:teklifim_gelsin/presentation/utility/palette.dart';
-import 'package:teklifim_gelsin/screens/detailed_loan_screen/detailed_loan_screen.dart';
-import 'package:teklifim_gelsin/screens/home_screen/home_model/home_model.dart';
-import 'package:teklifim_gelsin/screens/home_screen/home_widgets/sliding_panel_widgets/sliding_up_panel.dart';
+import '../../common/constants/sizes_constant.dart';
+import '../../presentation/utility/palette.dart';
+import '../detailed_loan_screen/detailed_loan_screen.dart';
+import 'home_model/home_model.dart';
+import 'home_widgets/sliding_panel_widgets/sliding_up_panel.dart';
 import 'home_widgets/steps_widgets/steps_container.dart';
 
 class HomeScreen extends GetView<HomeModel> {

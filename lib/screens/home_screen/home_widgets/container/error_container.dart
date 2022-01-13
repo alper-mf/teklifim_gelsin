@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:teklifim_gelsin/common/constants/sizes_constant.dart';
-import 'package:teklifim_gelsin/common/constants/text_styles.dart';
-import 'package:teklifim_gelsin/common/enum/fetch_enum.dart';
-import 'package:teklifim_gelsin/common/service/network_service.dart';
-import 'package:teklifim_gelsin/presentation/utility/palette.dart';
-import 'package:teklifim_gelsin/screens/home_screen/home_model/home_model.dart';
-import 'package:teklifim_gelsin/screens/home_screen/home_widgets/forms_widgets/custom_main_button.dart';
+import '../../../../common/constants/sizes_constant.dart';
+import '../../../../common/constants/text_styles.dart';
+import '../../../../common/enum/fetch_enum.dart';
+import '../../../../common/service/network_service.dart';
+import '../../../../presentation/utility/palette.dart';
+import '../../home_model/home_model.dart';
+import '../forms_widgets/custom_main_button.dart';
 
 class ErrorContainer extends NetWorkService {
   ErrorContainer({
