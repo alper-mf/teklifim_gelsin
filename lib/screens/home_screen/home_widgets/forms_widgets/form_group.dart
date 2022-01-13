@@ -23,7 +23,7 @@ class FormGroup extends GetView<HomeModel> {
           style: ITextStyle.subHead(Palette.textBoldColor, false),
         ),
         Flexible(
-          flex: 2,
+          flex: 1,
           child: TextFieldWithSlider(
             textEditingController: controller.loanTextController,
             min: 1000,
@@ -42,7 +42,7 @@ class FormGroup extends GetView<HomeModel> {
           style: ITextStyle.subHead(Palette.textBoldColor, false),
         ),
         Flexible(
-          flex: 2,
+          flex: 1,
           child: TextFieldWithSlider(
             textEditingController: controller.mounthTextController,
             min: 3,
