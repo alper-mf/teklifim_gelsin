@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import '../../../common/constants/sizes_constant.dart';
 import '../../../common/constants/text_styles.dart';
-import '../../../common/service/text_service.dart';
+import '../../../common/mixin/text_mixin.dart';
 import '../../../presentation/utility/palette.dart';
 import 'detailed_button.dart';
 

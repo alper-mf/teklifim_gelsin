@@ -3,7 +3,7 @@ import 'package:get/get.dart';
 import '../../../common/constants/sizes_constant.dart';
 import '../../../common/enum/fetch_enum.dart';
 import '../../../common/service/network_service.dart';
-import '../../../common/service/text_service.dart';
+import '../../../common/mixin/text_mixin.dart';
 import '../../../data/model/offers_model.dart';
 import '../../../presentation/utility/palette.dart';
 import '../detailed_loan_model/detailed_loan_model.dart';
