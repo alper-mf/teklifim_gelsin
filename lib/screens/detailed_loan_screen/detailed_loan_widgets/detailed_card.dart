@@ -6,7 +6,7 @@ import 'package:teklifim_gelsin/common/service/text_service.dart';
 import 'package:teklifim_gelsin/presentation/utility/palette.dart';
 import 'package:teklifim_gelsin/screens/detailed_loan_screen/detailed_loan_widgets/detailed_button.dart';
 
-class DetailedLoanCard extends StatelessWidget {
+class DetailedLoanCard extends StatelessWidget with TextServiceMixin {
   String aylikTaksitTutari;
   String toplamMaliyet;
   String faizOrani;
@@ -33,8 +33,7 @@ class DetailedLoanCard extends StatelessWidget {
           )),
       child: Column(
         children: [
-          SvgPicture.asset(TextService.bankaLogo(bankName),
-              height: Sizes.kHeight * .05),
+          SvgPicture.asset(bankaLogo(bankName), height: Sizes.kHeight * .05),
           SizedBox(
             height: Sizes.kPaddingH / 2,
           ),

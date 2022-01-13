@@ -2,10 +2,10 @@ import 'dart:math';
 
 import 'package:teklifim_gelsin/common/constants/assets_constant.dart';
 
-class TextService {
+class TextServiceMixin {
   //#
   //Get Bank Name On API Than Return Bank Logo
-  static String bankaLogo(String bankName) {
+  String bankaLogo(String bankName) {
     switch (bankName) {
       case 'Akbank':
         return AssetsConstant.akbank;
@@ -38,7 +38,7 @@ class TextService {
   }
 
   //Calculate Mounthly Payment Method
-  static String mounthlyPayment(double rate, var amount, var expiry) {
+  String mounthlyPayment(double rate, var amount, var expiry) {
     dynamic totalInterestRate = rate * 0.012;
 
     num a = pow(1 + totalInterestRate, int.parse(expiry));
@@ -51,7 +51,7 @@ class TextService {
   }
 
   //Calculate Total Cost Method
-  static String totalCost(String mounthlyPayment, String expiry) {
+  String totalCost(String mounthlyPayment, String expiry) {
     String totalCostString =
         (int.parse(mounthlyPayment) * int.parse(expiry)).toString();
     return totalCostString;

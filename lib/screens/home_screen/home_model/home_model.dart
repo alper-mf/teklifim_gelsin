@@ -9,15 +9,15 @@ class HomeModel extends GetxController {
 
   //Loan Controller
   final TextEditingController loanTextController = TextEditingController();
-  final RxDouble _loanDoble = 1000.0.obs;
-  RxDouble get loanDouble => _loanDoble;
-  setLoanDouble(double value) => _loanDoble.value = value;
+  final RxDouble _loan = 1000.0.obs;
+  RxDouble get loan => _loan;
+  setLoan(double value) => _loan.value = value;
 
   //Mounth Controller
   final TextEditingController mounthTextController = TextEditingController();
-  final RxDouble _mounth = 3.0.obs;
-  RxDouble get mounthDouble => _mounth;
-  setMounth(double value) => _mounth.value = value;
+  final RxDouble _expiry = 3.0.obs;
+  RxDouble get expiry => _expiry;
+  setExpiry(double value) => _expiry.value = value;
 
   //Show Offer Or Error Container
   final RxBool _showContainer = true.obs;
@@ -34,7 +34,7 @@ class HomeModel extends GetxController {
 
   @override
   void onInit() {
-    loanTextController.text = _loanDoble.toStringAsFixed(0);
+    loanTextController.text = _loan.toStringAsFixed(0);
     mounthTextController.text = '3 Ay';
     super.onInit();
   }

@@ -50,7 +50,7 @@ class ErrorContainer extends NetWorkService {
                     ResponseCount.maxMounth,
                     ResponseCount.partlyResponse,
                   ).then((value) {
-                    controller.setMounth(ResponseCount.maxMounth.toDouble());
+                    controller.setExpiry(ResponseCount.maxMounth.toDouble());
                     controller.bottomSlidingBarCont.close();
                     controller.setShowContainer(true);
                     controller.setShowOffers(true);

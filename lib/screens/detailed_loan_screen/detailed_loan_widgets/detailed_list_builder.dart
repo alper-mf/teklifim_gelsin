@@ -12,7 +12,7 @@ import 'package:teklifim_gelsin/screens/detailed_loan_screen/detailed_loan_widge
 import 'package:teklifim_gelsin/screens/home_screen/home_model/home_model.dart';
 
 // ignore: must_be_immutable
-class DetailedListBuilder extends NetWorkService {
+class DetailedListBuilder extends NetWorkService with TextServiceMixin {
   final HomeModel homeModel;
   DetailedListBuilder({
     Key? key,
@@ -31,9 +31,9 @@ class DetailedListBuilder extends NetWorkService {
               Offer item = controller.offersList[index];
               dynamic rate = item.rate;
               dynamic amount = homeModel.loanTextController.text;
-              dynamic expiry = homeModel.mounthDouble.toStringAsFixed(0);
-              String mounthlyPayment =
-                  TextService.mounthlyPayment(rate, amount, expiry);
+              dynamic expiry = homeModel.expiry.toStringAsFixed(0);
+              String mounthlyPaymentString =
+                  mounthlyPayment(rate, amount, expiry);
 
               if (index == 2 &&
                   controller.offersList.length ==
@@ -41,9 +41,8 @@ class DetailedListBuilder extends NetWorkService {
                 return Column(
                   children: [
                     DetailedLoanCard(
-                        aylikTaksitTutari: mounthlyPayment,
-                        toplamMaliyet:
-                            TextService.totalCost(mounthlyPayment, expiry),
+                        aylikTaksitTutari: mounthlyPaymentString,
+                        toplamMaliyet: totalCost(mounthlyPaymentString, expiry),
                         bankName: item.bank,
                         faizOrani: item.rate.toString()),
                     SizedBox(
@@ -64,8 +63,8 @@ class DetailedListBuilder extends NetWorkService {
               }
 
               return DetailedLoanCard(
-                  aylikTaksitTutari: mounthlyPayment,
-                  toplamMaliyet: TextService.totalCost(mounthlyPayment, expiry),
+                  aylikTaksitTutari: mounthlyPaymentString,
+                  toplamMaliyet: totalCost(mounthlyPaymentString, expiry),
                   bankName: item.bank,
                   faizOrani: item.rate.toString());
             }),

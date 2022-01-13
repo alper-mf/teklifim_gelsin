@@ -37,7 +37,7 @@ class OfferContainer extends NetWorkService {
             SizedBox(height: Sizes.kPaddingH / 2),
             Obx(
               () => Text(
-                '₺${controller.loanDouble().round()} ${controller.mounthDouble().round()} Ay Vadeli',
+                '₺${controller.loan().round()} ${controller.expiry().round()} Ay Vadeli',
                 style: ITextStyle.subHead(Palette.sliderActiveColor, true),
               ),
             ),
